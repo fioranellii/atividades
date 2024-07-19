@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .item{
+            flex: 1 1 calc(33.333% - 10px);
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar">
+        <a href="#" class="item">Home</a>
+        <a href="#" class="item">About</a>
+        <a href="#" class="item">Services</a>
+        <a href="#" class="item">Contact</a>
+        
+    </nav>
+    </div>
+    <!--Diminuindo o container a navbar diminuiu para se ajustar ao tamanho do container-->
+</body>
+</html>

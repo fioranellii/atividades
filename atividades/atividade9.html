@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .item:first-child{
+            flex-grow: 2;
+            align-self: flex-end;
+        }
+        .item:nth-child(3){
+            flex-shrink: 3;
+        }
+        .item:nth-child(2){
+            flex-basis: 150px;
+        }
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: lightcoral;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item">item1</div>
+            <div class="item">item2</div>
+            <div class="item">item3</div>
+            <!--O comando align-self faz com ele se alinhe, e o flex-end o alinha para o final horizontal da página-->
+        </div>
+    </main>
+</body>
+</html>

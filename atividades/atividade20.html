@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 15px;
+        }
+        .item{
+            flex: 1 1 200px;
+            align-self: stretch;
+        }
+        .item:nth-child(2){
+            flex-grow: 2;
+        }
+        .item:nth-child(4){
+            order: -1;
+            flex-basis: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav class="navbar">
+        <a href="#" class="item">Home</a>
+        <a href="#" class="item">About</a>
+        <a href="#" class="item">Services</a>
+        <a href="#" class="item">Contact</a>
+        
+    </nav>
+    </div>
+    <!--Agora o conteúdo está centralizado horizontalmente e com o contact em primeira posição e com espaço inicial de 300px-->
+</body>
+</html>
